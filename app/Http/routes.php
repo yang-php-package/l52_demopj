@@ -14,19 +14,21 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/login', function () {
-    return [
-        'name' => "Ken Lin",
-        'user_id' => '3',
-        'detail' => [
-            'country' => 'Taiwan',
-            'city' => 'New Taipei City',
-            'zip'  => 220,
-            'addr' => 'XXX rd, no 299'
-        ]
-    ];
+Route::get('/login',function (){
+	return [
+	'name'=>'kevin',
+	'user_id'=>'3',
+	'detail'=>[
+	 'addr' => 'new taipei',
+	 'zip'  => 220,
+	 'nameing' => 'yang']
+	];
 });
+
+
+Route::get('/logout',function (){
+}
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -34,7 +36,7 @@ Route::get('/login', function () {
 |
 | This route group applies the "web" middleware group to every route
 | it contains. The "web" middleware group is defined in your HTTP
-| kernel and includes session state, CSRF protection, and more.
+| kernel and includes  session state, CSRF protection, and more.
 |
 */
 
