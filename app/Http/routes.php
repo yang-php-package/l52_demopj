@@ -15,6 +15,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/login', function () {
+    return [
+        'name' => "Ken Lin",
+        'user_id' => '3',
+        'detail' => [
+            'country' => 'Taiwan',
+            'city' => 'New Taipei City',
+            'zip'  => 220,
+            'addr' => 'XXX rd, no 299'
+        ]
+    ];
+});
 /*
 |--------------------------------------------------------------------------
 | Application Routes
